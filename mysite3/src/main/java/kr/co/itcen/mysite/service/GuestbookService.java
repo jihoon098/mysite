@@ -26,6 +26,11 @@ public class GuestbookService {
 	public void delete(GuestbookVo vo) { 
 		guestbookDao.delete(vo);
 	}
+
+	public boolean writeContent( GuestbookVo vo ) {
+		int count = guestbookDao.insert(vo);
+		return count == 1;
+	}
 	 
 
 }

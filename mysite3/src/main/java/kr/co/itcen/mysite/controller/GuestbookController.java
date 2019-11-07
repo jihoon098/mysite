@@ -51,4 +51,11 @@ public class GuestbookController {
 		return "redirect:/guestbook";
 	}
 	
+	
+	//SPA(Single Page Application)
+	@RequestMapping( value="/spa", method=RequestMethod.GET )
+	public String spa() {
+		return "guestbook/index-spa";
+	}
+	
 }

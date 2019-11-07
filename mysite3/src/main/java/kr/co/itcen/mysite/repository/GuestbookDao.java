@@ -18,8 +18,8 @@ public class GuestbookDao {
 		sqlSession.delete("guestbook.delete", vo);
 	}
 	
-	public void insert(GuestbookVo vo) {
-		sqlSession.insert("guestbook.insert", vo);
+	public int insert(GuestbookVo vo) {
+		return sqlSession.insert("guestbook.insert", vo);
 	}
 	
 	public List<GuestbookVo> getList() {

@@ -23,8 +23,7 @@
 							<td>비밀번호</td>
 							<td><input type="password" name="password"></td>
 							<td><input type="submit" value="확인"></td>
-							<td><a href="${pageContext.servletContext.contextPath }/guestbook">메인으로
-									돌아가기</a></td>
+							<td><a href="${pageContext.servletContext.contextPath }/guestbook">방명록 리스트</a></td>
 						</tr>
 					</table>
 				</form>
@@ -32,7 +31,9 @@
 			</div>
 		</div>
 
-		<c:import url="/WEB-INF/views/includes/navigation.jsp" />
+		<c:import url="/WEB-INF/views/includes/navigation.jsp">
+			<c:param name="menu" value="guestbook"/>
+		</c:import>
 		<c:import url="/WEB-INF/views/includes/footer.jsp" />
 
 	</div>

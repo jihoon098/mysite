@@ -40,7 +40,6 @@
 			<bean class="kr.co.itcen.mysite.security.AuthUserHandlerMethodArgumentResolver" />
 		</mvc:argument-resolvers>
 		
-		
 	</mvc:annotation-driven>
 	
 	
